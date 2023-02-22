@@ -1,0 +1,61 @@
+body {
+	min-height: 100vh;
+}
+
+main {
+	display: grid;
+	place-items: center;
+	height: 100%;
+}
+
+.carousel__container {
+	display: flex;
+	gap: 10px;
+	height: 80%;
+	width: 90vw;
+}
+
+.arrow {
+	width: 42px;
+	height: 42px;
+	place-self: center;
+	background: url('../../assets/images/CaretCircleRight.svg') no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.arrow-right {
+	transform: rotate(180deg);
+}
+
+.carousel__hidden {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.carousel__images {
+	display: flex;
+	gap: 10px;
+	height: 100%;
+}
+
+.carousel__images div {
+	flex: 1;
+	min-width: 90px;
+	border-radius: 999px;
+	overflow: hidden;
+	transition: all 0.7s ease, border-radius 0.2s ease;
+}
+
+.carousel__images div img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.carousel__images .show {
+	flex: 8;
+	min-width: 700px;
+	border-radius: 50px;
+}
